@@ -1,31 +1,25 @@
-# Code 4 Puerto Rico Repositorio Base
+# COVID-19 Response Central Repository
 
-Repositorio base para todo proyecto en Code 4 Puerto Rico.
+This is the central repository the the Code 4 Puerto Rico COVID-19 response efforts.
 
-## Como utilizar esto
+## What's in this repository
 
-Haga click en el boton de `Use this template`.
+Here you will find documentation about our efforts for the COVID-19 pandemic, links to other repositories, discussion about the various efforts, Issues, and general information about just what we are doing.
 
-![Imgur: https://imgur.com/FeDfjCd](https://i.imgur.com/FeDfjCd.png?1)
+We will also be posting any financial sponsorships for any of our efforts, if any should happen.
 
-Una vez acabe el proceso de crear tu repositorio debería añadir o cambiar algunas cosas:
+### White papers
 
-1. Cambiar `code_owner` en los workflow files encontrados en directorio [.github/workflows](.github/workflows)
-2. Cambiar el valor del `cron` en el workflow [.github/workflows/stale.yml](.github/workflows/stale.yml#L6). Esto determina cuando este workflow se ejecuta. Este valor sigue el formato de `cron`. Para más información sobre esto
-    - [Wikipedia Cron](https://en.wikipedia.org/wiki/Cron)
-    - [Crontab Guru](https://crontab.guru/)
-3. Revisar y cambiar, de ser necesario, el archivo [CONTRIBUTING.md](CONTRIBUTING.md) a algo que haga sentido para tu proyecto.
-4. Recomendamos que utilizen ["Issue Templates" y "Pull Request Templates"](https://help.github.com/en/github/building-a-strong-community/using-templates-to-encourage-useful-issues-and-pull-requests).
-5. Cambiar la licencia del proyecto a una [licencia de código abierto](https://opensource.org/licenses).
-    - Tambien puedes utilizar [Choose a License](https://choosealicense.com/).
-    - [Más información sobre licencias en repositorios en GitHub](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository#where-does-the-license-live-on-my-repository)
-6. Cambiar o eliminar los `code owners` encontrados en [.github/CODEOWNERS](.github/CODEOWNERS#L5) a los usuarios pertinentes para el repositorio que se esta creando.
-    - [Más información sobre CODEOWNERS](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners)
-7. Dependiendo del proyecto es recomendable [crear "branch protections" en tu repositorio](https://help.github.com/en/github/administering-a-repository/configuring-protected-branches).
+As part of our efforts we are planning on writing white papers with what we think could be good practices, projects, and proof of concepts. A GitHub Issue will also be created with each white paper as a place to get public comment. All white papers will also be submitted via Pull Request and will only be merged into our master branch with team approvals.
 
+Public comment to the white paper will be open for two weeks as a minimum.
 
-## Codigo de Conducta
+We will be accepting Pull Requests to white papers via Pull Request.
 
-Todo proyecto en Code 4 Puerto Rico tiene que dejarse llevar por su codigo de conducta. De esto no ser posible se deberia discutir con Code 4 Puerto Rico.
+## Contributing to this Repository
 
-Si estas usando este "template" para un proyecto fuera de Code 4 Puerto Rico les recomendamos utilizar un código de conducta mencionado [aquí](https://opensource.guide/code-of-conduct/).
+Please take a look at our [CONTRIBUTING.md](CONTRIBUTING.md) for steps to help you contribute to this repo.
+
+## Code of Conduct
+
+All project in Code 4 Puerto Rico needs add a code of conduct or point to [Code 4 Puerto Rico's Code of Conduct](CODE_OF_CONDUCT.md). All new code of conducts need to be compatible with Code 4 Puerto Rico's code of conduct. There is always room for a conversation is this is not possible.
