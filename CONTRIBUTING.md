@@ -31,7 +31,7 @@ The [Project Team](#join-the-project-team) looks forward to your contributions. 
 
 If you have a question about this project, how to use it, or just need clarification about something:
 
-* Open an Issue at https://github.com/Code4PuertoRico/base-repo/issues
+* Open an Issue at https://github.com/Code4PuertoRico/covid19-response/issues
 * Provide as much context as you can about what you're running into.
 * Provide project and platform versions, depending on what seems relevant. If not, please be ready to provide that information if maintainers ask for it.
 
@@ -41,67 +41,39 @@ Once it's filed:
 * Someone will try to have a response soon.
 * If you or the maintainers don't respond to an issue for 30 days, the [issue will be closed](#clean-up-issues-and-prs). If you want to come back to it, reply (once, please), and we'll reopen the existing issue. Please avoid filing new issues as extensions of one you already made.
 
-## Report an Error or Bug
+## Submitting Issues
 
-If you run into an error or bug with the project:
+### Report an Error
 
-* Open an Issue at https://github.com/Code4PuertoRico/base-repo/issues
-* Include *reproduction steps* that someone else can follow to recreate the bug or error on their own.
-* Provide project and platform versions (nodejs, npm, etc), depending on what seems relevant. If not, please be ready to provide that information if maintainers ask for it.
+If you want to bring up a perceived error or issue with our work:
 
-Once it's filed:
+* Open an Issue at [https://github.com/Code4PuertoRico/covid19-response/issues/choose](https://github.com/Code4PuertoRico/covid19-response/issues/choose).
+* Please pick the `Report Error` issue template.
+* Please include a detailed description about the issue and any thoughts to help the team understand your position.
+
+Once the issue is filed:
 
 * The project team will [label the issue](#label-issues).
-* A team member will try to reproduce the issue with your provided steps. If there are no repro steps or no obvious way to reproduce the issue, the team will ask you for those steps and mark the issue as `needs-repro`. Bugs with the `needs-repro` tag will not be addressed until they are reproduced.
-* If the team is able to reproduce the issue, it will be marked `needs-fix`, as well as possibly other tags (such as `critical`), and the issue will be left to be [implemented by someone](#contribute-code).
+* The team will go over the error and your thoughts on how to solve the issue. The team will try to answer in the same issue as quickly as possible.
+* The team will apply the appropriate label as soon as they reach an agreement on the issue presented.
 * If you or the maintainers don't respond to an issue for 30 days, the [issue will be closed](#clean-up-issues-and-prs). If you want to come back to it, reply (once, please), and we'll reopen the existing issue. Please avoid filing new issues as extensions of one you already made.
-* `critical` issues may be left open, depending on perceived immediacy and severity, even past the 30 day deadline.
+* `ongoing-discussion` issues may be left open, depending on perceived immediacy and severity, even past the 30 day deadline.
 
-## Request a Feature
+### Submit Feedback
 
-If the project doesn't do something you need or want it to do:
+If you wish to provide feedback to the team:
 
-* Open an Issue at https://github.com/Code4PuertoRico/base-repo/issues
-* Provide as much context as you can about what you're running into.
-* Please try and be clear about why existing features and alternatives would not work for you.
+* Open an Issue at [https://github.com/Code4PuertoRico/covid19-response/issues/choose](https://github.com/Code4PuertoRico/covid19-response/issues/choose).
+* Please pick the `Feedback` issue template.
+* Please include a detailed description of your feedback and any thoughts to help the team understand your position.
 
-Once it's filed:
+Once the issue is filed:
 
 * The project team will [label the issue](#label-issues).
-* The project team will evaluate the feature request, possibly asking you more questions to understand its purpose and any relevant requirements. If the issue is closed, the team will convey their reasoning and suggest an alternative path forward.
-* If the feature request is accepted, it will be marked for implementation with `feature-accepted`, which can then be done by either by a core team member or by anyone in the community who wants to [contribute code](#contribute-code).
-
-Note: The team is unlikely to be able to accept every single feature request that is filed. Please understand if they need to say no.
-
-## Project Setup
-
-So you wanna contribute some code! That's great! This project uses GitHub Pull Requests to manage contributions, so [read up on how to fork a GitHub project and file a PR](https://guides.github.com/activities/forking) if you've never done it before.
-
-If this seems like a lot or you aren't able to do all this setup, you might also be able to [edit the files directly](https://help.github.com/articles/editing-files-in-another-user-s-repository/) without having to do any of this setup. Yes, [even code](#contribute-code).
-
-If you want to go the usual route and run the project locally, though:
-
-- Fork the project: https://guides.github.com/activities/forking/#fork
-
-After you've forked and cloned the repository you can use our [project-setup](project-setup) script to get up and running quickly:
-
-- In your terminal you can run `> ./project-setup`
-- Just answer the questions and follow any steps in the prompt.
-
-Alternatively you can execute the following steps to setup the project as well:
-
-- Install pipenv: `pip install pipenv`
-- Install dependencies: `pipenv install --dev`
-- Install pre-commit hooks: `pipenv run pre-commit install`
-- Install docker-compose: https://docs.docker.com/compose/install/
-- [Download latest database dump](docs/database-dump.md#using-latest-dump-for-development)
-- Build and start containers, including test container: `docker-compose up --build -d`
-- Create super user: `docker-compose exec web python manage.py createsuperuser`
-- open http://localhost:8000
-
-And you should be ready to go! :tada:
-
-You can use this command to run tests on demand: `docker-compose run tests`
+* The team will go over the feedback and try to answer in the same issue as quickly as possible.
+* The team will apply the appropriate label as soon as they reach an agreement on the feedback presented.
+* If you or the maintainers don't respond to an issue for 30 days, the [issue will be closed](#clean-up-issues-and-prs). If you want to come back to it, reply (once, please), and we'll reopen the existing issue. Please avoid filing new issues as extensions of one you already made.
+* `ongoing-discussion` issues may be left open, depending on perceived immediacy and severity, even past the 30 day deadline.
 
 ## Contribute Documentation
 
@@ -111,12 +83,13 @@ Documentation contributions of any size are welcome! Feel free to file a PR even
 
 To contribute documentation:
 
-* [Set up the project](#project-setup).
+* [Fork this repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo?algolia-query=fork).
 * Edit or add any relevant documentation.
 * Make sure your changes are formatted correctly and consistently with the rest of the documentation.
 * Re-read what you wrote, and run a spellchecker on it to make sure you didn't miss anything.
 * Write clear, concise commit message(s).
-* Go to https://github.com/Code4PuertoRico/base-repo/pulls and open a new pull request with your changes.
+* Push your changes into your fork.
+* Go to https://github.com/Code4PuertoRico/covid19-response/pulls and open a new pull request with your changes.
 * If your PR is connected to an open issue, add a line in your PR's description that says `Fixes: #123`, where `#123` is the number of the issue you're fixing.
 
 Once you've filed the PR:
@@ -124,35 +97,7 @@ Once you've filed the PR:
 * One or more maintainers will use GitHub's review feature to review your PR.
 * If the maintainer asks for any changes, edit your changes, push, and ask for another review.
 * If the maintainer decides to pass on your PR, they will thank you for the contribution and explain why they won't be accepting the changes. That's ok! We still really appreciate you taking the time to do it, and we don't take that lightly. 💚
-* If your PR gets accepted, it will be marked as such, and merged into the `master` branch soon after. Your contribution will be distributed to the masses next time the maintainers [tag a release](#tag-a-release)
-
-## Contribute Code
-
-We like code commits a lot! They're super handy, and they keep the project going and doing the work it needs to do to be useful to others.
-
-Code contributions of just about any size are acceptable!
-
-The main difference between code contributions and documentation contributions is that contributing code requires inclusion of relevant tests for the code being added or changed. Contributions without accompanying tests will be held off until a test is added, unless the maintainers consider the specific tests to be either impossible, or way too much of a burden for such a contribution.
-
-To contribute code:
-
-* [Set up the project](#project-setup).
-* Make any necessary changes to the source code.
-* Include any [additional documentation](#contribute-documentation) the changes might need.
-* Write tests that verify that your contribution works as expected.
-* Write clear, concise commit message(s).
-* Dependency updates, additions, or removals must be in individual commits.
-* Ensure old tests are still passing.
-* Go to https://github.com/Code4PuertoRico/base-repo/pulls and open a new pull request with your changes.
-* If your PR is connected to an open issue, add a line in your PR's description that says `Fixes: #123`, where `#123` is the number of the issue you're fixing.
-
-Once you've filed the PR:
-
-* Barring special circumstances, maintainers will not review PRs until all checks pass (Travis, AppVeyor, etc).
-* One or more maintainers will use GitHub's review feature to review your PR.
-* If the maintainer asks for any changes, edit your changes, push, and ask for another review. Additional tags (such as `needs-tests`) will be added depending on the review.
-* If the maintainer decides to pass on your PR, they will thank you for the contribution and explain why they won't be accepting the changes. That's ok! We still really appreciate you taking the time to do it, and we don't take that lightly. 💚
-* If your PR gets accepted, it will be marked as such, and merged into the `master` branch soon after. Your contribution will be distributed to the masses next time the maintainers [tag a release](#tag-a-release)
+* If your PR gets accepted, it will be marked as such, and merged into the `master` branch soon after.
 
 ## Provide Support on Issues
 
@@ -164,7 +109,7 @@ Sometimes, the `support` label will be added to things that turn out to actually
 
 In order to help other folks out with their questions:
 
-* Go to the issue tracker and [filter open issues by the `support` label](https://github.com/Code4PuertoRico/base-repo/issues?q=is%3Aopen+is%3Aissue+label%3Asupport).
+* Go to the issue tracker and [filter open issues by the `support` label](https://github.com/Code4PuertoRico/covid19-response/issues?q=is%3Aopen+is%3Aissue+label%3Asupport).
 * Read through the list until you find something that you're familiar enough with to give an answer to.
 * Respond to the issue with whatever details are needed to clarify the question, or get more details about what's going on.
 * Once the discussion wraps up and things are clarified, either close the issue, or ask the original issue filer (or a maintainer) to close it for you.
@@ -181,21 +126,18 @@ Some notes on picking up support issues:
 
 One of the most important tasks in handling issues is labeling them usefully and accurately. All other tasks involving issues ultimately rely on the issue being classified in such a way that relevant parties looking to do their own tasks can find them quickly and easily.
 
-In order to label issues, [open up the list of unlabeled issues](https://github.com/Code4PuertoRico/base-repo/issues?q=is%3Aopen+is%3Aissue+no%3Alabel) and, **from newest to oldest**, read through each one and apply issue labels according to the table below. If you're unsure about what label to apply, skip the issue and try the next one: don't feel obligated to label each and every issue yourself!
+In order to label issues, [open up the list of unlabeled issues](https://github.com/Code4PuertoRico/covid19-response/issues?q=is%3Aopen+is%3Aissue+no%3Alabel) and, **from newest to oldest**, read through each one and apply issue labels according to the table below. If you're unsure about what label to apply, skip the issue and try the next one: don't feel obligated to label each and every issue yourself!
 
 Label | Apply When | Notes
 --- | --- | ---
-`bug` | Cases where the code (or documentation) is behaving in a way it wasn't intended to. | If something is happening that surprises the *user* but does not go against the way the code is designed, it should use the `enhancement` label.
-`critical` | Added to `bug` issues if the problem described makes the code completely unusable in a common situation. |
-`documentation` | Added to issues or pull requests that affect any of the documentation for the project. | Can be combined with other labels, such as `bug` or `enhancement`.
+`error` | Cases where the documentation has some error or isn't clear. | If something surprises the *user* but does not go against the way the documentation is designed, it should use the `enhancement` label.
+`critical` | Added to `error` issues if the problem described makes the documentation or white paper completely unusable or egregiously incorrect. |
+`documentation` | Added to issues or pull requests that affect any of the documentation for the project. | Can be combined with other labels, such as `error` or `enhancement`.
 `duplicate` | Added to issues or PRs that refer to the exact same issue as another one that's been previously labeled. | Duplicate issues should be marked and closed right away, with a message referencing the issue it's a duplicate of (with `#123`)
 `enhancement` | Added to [feature requests](#request-a-feature), PRs, or documentation issues that are purely additive: the code or docs currently work as expected, but a change is being requested or suggested. |
 `help wanted` | Applied by [Committers](#join-the-project-team) to issues and PRs that they would like to get outside help for. Generally, this means it's lower priority for the maintainer team to itself implement, but that the community is encouraged to pick up if they so desire | Never applied on first-pass labeling.
-`in-progress` | Applied by [Committers](#join-the-project-team) to PRs that are pending some work before they're ready for review. | The original PR submitter should @mention the team member that applied the label once the PR is complete.
-`performance` | This issue or PR is directly related to improving performance. |
 `refactor` | Added to issues or PRs that deal with cleaning up or modifying the project for the betterment of it. |
-`starter` | Applied by [Committers](#join-the-project-team) to issues that they consider good introductions to the project for people who have not contributed before. These are not necessarily "easy", but rather focused around how much context is necessary in order to understand what needs to be done for this project in particular. | Existing project members are expected to stay away from these unless they increase in priority.
-`support` | This issue is either asking a question about how to use the project, clarifying the reason for unexpected behavior, or possibly reporting a `bug` but does not have enough detail yet to determine whether it would count as such. | The label should be switched to `bug` if reliable reproduction steps are provided. Issues primarily with unintended configurations of a user's environment are not considered bugs, even if they cause crashes.
+`question` | This issue asking a question about how to use the project, clarifying the reason for unexpected behavior, or possibly reporting a `bug` but does not have enough detail yet to determine whether it would count as such. | The label should be switched to `bug` if reliable reproduction steps are provided. Issues primarily with unintended configurations of a user's environment are not considered bugs, even if they cause crashes.
 `tests` | This issue or PR either requests or adds primarily tests to the project. | If a PR is pending tests, that will be handled through the [PR review process](#review-pull-requests)
 `wontfix` | Labelers may apply this label to issues that clearly have nothing at all to do with the project or are otherwise entirely outside of its scope/sphere of influence. [Committers](#join-the-project-team) may apply this label and close an issue or PR if they decide to pass on an otherwise relevant issue. | The issue or PR should be closed as soon as the label is applied, and a clear explanation provided of why the label was used. Contributors are free to contest the labeling, but the decision ultimately falls on committers as to whether to accept something or not.
 
@@ -216,7 +158,7 @@ To clean up issues and PRs:
   * not marked as `starter` or `help wanted` (these might stick around for a while, in general, as they're intended to be available)
   * no explicit messages in the comments asking for it to be left open
   * does not belong to a milestone
-* Leave a message when closing saying "Cleaning up stale issue. Please reopen or ping us if and when you're ready to resume this. See https://github.com/Code4PuertoRico/base-repo/blob/latest/CONTRIBUTING.md#clean-up-issues-and-prs for more details."
+* Leave a message when closing saying "Cleaning up stale issue. Please reopen or ping us if and when you're ready to resume this. See https://github.com/Code4PuertoRico/covid19-response/blob/latest/CONTRIBUTING.md#clean-up-issues-and-prs for more details."
 
 ## Review Pull Requests
 
