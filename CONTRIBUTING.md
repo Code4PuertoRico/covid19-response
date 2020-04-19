@@ -122,7 +122,7 @@ Some notes on picking up support issues:
 
 ## Label Issues
 
-[Needs Collaborator](#join-the-project-team): Issue Tracker
+[Needs Collaborator](#join-the-project-team): Issue Handler
 
 One of the most important tasks in handling issues is labeling them usefully and accurately. All other tasks involving issues ultimately rely on the issue being classified in such a way that relevant parties looking to do their own tasks can find them quickly and easily.
 
@@ -141,7 +141,7 @@ Label | Apply When | Notes
 
 ## Clean Up Issues and PRs
 
-[Needs Collaborator](#join-the-project-team): Issue Tracker
+[Needs Collaborator](#join-the-project-team): Issue Handler
 
 Issues and PRs can go stale after a while. Maybe they're abandoned. Maybe the team will just plain not have time to address them any time soon.
 
@@ -149,7 +149,7 @@ In these cases, they should be closed until they're brought up again or the inte
 
 To clean up issues and PRs:
 
-* Search the issue tracker for issues or PRs, and add the term `updated:<=YYYY-MM-DD`, where the date is 30 days before today.
+* Search the Issue Handler for issues or PRs, and add the term `updated:<=YYYY-MM-DD`, where the date is 30 days before today.
 * Go through each issue *from oldest to newest*, and close them if **all of the following are true**:
   * not opened by a maintainer
   * not marked as `critical`
@@ -160,9 +160,9 @@ To clean up issues and PRs:
 
 ## Review Pull Requests
 
-[Needs Collaborator](#join-the-project-team): Issue Tracker
+[Needs Collaborator](#join-the-project-team): Issue Handler
 
-While anyone can comment on a PR, add feedback, etc, PRs are only *approved* by team members with Issue Tracker or higher permissions.
+While anyone can comment on a PR, add feedback, etc, PRs are only *approved* by team members with Issue Handler or higher permissions.
 
 PR reviews use [GitHub's own review feature](https://help.github.com/articles/about-pull-request-reviews/), which manages comments, approval, and review iteration.
 
@@ -185,8 +185,9 @@ You can spot a collaborator on the repo by looking for the `[Collaborator]` or `
 
 Permission | Description
 --- | ---
-Issue Tracker | Granted to contributors who express a strong interest in spending time on the project's issue tracker. These tasks are mainly [labeling issues](#label-issues), [cleaning up old ones](#clean-up-issues-and-prs), and [reviewing pull requests](#review-pull-requests), as well as all the usual things non-team-member contributors can do. Issue handlers should not merge pull requests, tag releases, or directly commit code themselves: that should still be done through the usual pull request process. Becoming an Issue Handler means the project team trusts you to understand enough of the team's process and context to implement it on the issue tracker.
+Issue Handler | Granted to contributors who express a strong interest in spending time triaging the project's issues. These tasks are mainly [labeling issues](#label-issues), [cleaning up old ones](#clean-up-issues-and-prs), and [reviewing pull requests](#review-pull-requests), as well as all the usual things non-team-member contributors can do. Issue handlers should not merge pull requests, tag releases, or directly commit code themselves: that should still be done through the usual pull request process. Becoming an Issue Handler means the project team trusts you to understand enough of the team's process and context to implement it on the issue tracker.
 Committer | Granted to contributors who want to handle the actual pull request merges, tagging new versions, etc. Committers should have a good level of familiarity with the codebase, and enough context to understand the implications of various changes, as well as a good sense of the will and expectations of the project team.
+Maintainer | Granted to contributors who want to also help admin the repository along with being a committer. These individuals will be able to handle some admin roles and will be recognized as code owners. They will also help craft releases when necessary.
 Admin/Owner | Granted to people ultimately responsible for the project, its community, etc.
 
 ## Attribution
