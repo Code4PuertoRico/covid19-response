@@ -2,6 +2,11 @@
 
 This is the central repository the the Code 4 Puerto Rico COVID-19 response efforts.
 
+## Asociated repositories
+
+- [COVID-19 Dashboard](https://github.com/Code4PuertoRico/covid19-pr-dashboard)
+- [COVID19 API](https://github.com/Code4PuertoRico/covid19-api)
+
 ## What's in this repository
 
 Here you will find documentation about our efforts for the COVID-19 pandemic, links to other repositories, discussion about the various efforts, Issues, and general information about just what we are doing.
